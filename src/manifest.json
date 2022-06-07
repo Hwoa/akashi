@@ -1,0 +1,13 @@
+{
+  "name": "AKASHI-CHECKER",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "AKASHIの入力チェックを行う拡張です。",
+  "content_scripts": [
+    {
+      "matches": ["https://atnd.ak4.jp/manager/attendance/*/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
