@@ -8,6 +8,11 @@
       "matches": ["https://atnd.ak4.jp/manager/attendance/*/*"],
       "js": ["content.js"],
       "run_at": "document_end"
+    },
+    {
+      "matches": ["https://atnd.ak4.jp/attendance"],
+      "js": ["content.js"],
+      "run_at": "document_end"
     }
   ]
 }
