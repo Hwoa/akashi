@@ -16,6 +16,10 @@ const ALL_MEETING_START = "08:40";
 
 const EMPTY_START_END = "--:--";
 
+// 開始時間のパターン
+// const START_ARRAY = [EARLY_START, NORMAL_START, LATE_START];
+const START_ARRAY = [EARLY_START, NORMAL_START, LATE_START];
+
 function main(e) {
 
     // 読み込みを1秒ずつ行う
@@ -174,7 +178,6 @@ function main(e) {
     // 開始時間の組み合わせを調べる
     function checkStart(target_date, start_time, end_time, status) {
 
-        const START_ARRAY = [EARLY_START, NORMAL_START, LATE_START];
         const HOLIDAY_ARRAY = [KYUUJITU, NENKYU, KORONA];
 
         let today = new Date(target_date);
